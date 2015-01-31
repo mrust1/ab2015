@@ -1,0 +1,15 @@
+development: &default
+  adapter: postgresql
+  database: new_app_development
+  encoding: utf8
+  min_messages: warning
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: 'deneme'
+  password: "12341234"
+  port: 5432
+
+test:
+  <<: *default
+  database: new_app_test
